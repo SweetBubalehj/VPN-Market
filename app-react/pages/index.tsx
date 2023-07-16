@@ -1,6 +1,8 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Divider, Layout } from "antd";
 import type { NextPage } from "next";
+import CardComponent from "../components/cards";
+import { baseURI } from "../contract/VPNmarket";
 
 const { Content } = Layout;
 
@@ -13,7 +15,15 @@ const Home: NextPage = () => {
         <ConnectButton />
       </div>
       <Divider />
-      <Content></Content>
+      <Content>
+        <CardComponent
+          id={0}
+          imageSrc={baseURI}
+          price={1000000000000000}
+          daysPeriod={30}
+          isConnected={true}
+        />
+      </Content>
     </Layout>
   );
 };

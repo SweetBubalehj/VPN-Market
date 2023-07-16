@@ -1,4 +1,5 @@
-export const contractAddress: string = "0xe1c8b74745a49119771cbd5c682250bbd8dadca4";
+export const contractAddress: any =
+  "0xe1c8b74745a49119771cbd5c682250bbd8dadca4";
 
 export const baseURI: string =
   "https://gateway.pinata.cloud/ipfs/QmUK4SKByWHTmMuNFphsyqvPEbfwwB7EjF7vUPXc2emepX";
