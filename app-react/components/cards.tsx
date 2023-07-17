@@ -30,9 +30,11 @@ const CardComponent: React.FC<CardProps> = ({
     formatUnits: "wei",
   });
 
-  const userBalance: number = !undefined
-    ? Number(userBalanceData.data?.formatted)
-    : 0;
+  const userBalance: number =
+    userBalanceData.data?.formatted !== undefined
+      ? Number(userBalanceData.data?.formatted)
+      : 0;
+
   console.log(userBalance);
 
   const { config: buyPlan } = usePrepareContractWrite({
